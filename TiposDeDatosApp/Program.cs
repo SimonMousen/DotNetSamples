@@ -30,7 +30,7 @@ namespace TiposDeDatosApp
 
             Docente[] misDocentes =
            {
-                new Docente(98648, "Luis Federico", "Sanchez Perez","Calle con carera y numero","yosisoy@elmejor.com",31200000,fnac,fing),
+               new Docente(98648, "Luis Federico", "Sanchez Perez","Calle con carera y numero","yosisoy@elmejor.com",31200000,fnac,fing),
                new Docente(98648, "Luis Federico", "Sanchez Perez","Calle con carera y numero","yosisoy@elmejor.com",31200000,fnac,fing),
                new Docente(98648, "Luis Federico", "Sanchez Perez","Calle con carera y numero","yosisoy@elmejor.com",31200000,fnac,fing),
                new Docente(98648, "Luis Federico", "Sanchez Perez","Calle con carera y numero","yosisoy@elmejor.com",31200000,fnac,fing),
