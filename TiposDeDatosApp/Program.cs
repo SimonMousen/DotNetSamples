@@ -45,9 +45,6 @@ namespace TiposDeDatosApp
                 Console.WriteLine("--------------------------------");
                 Console.WriteLine(Docente.GetInfoDocente(d));
             }
-            
-
-               
         }
     }
 }
