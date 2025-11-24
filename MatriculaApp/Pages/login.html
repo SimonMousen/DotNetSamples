@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Matrícula - Login</title>
+    
+</head>
+<style>
+        .user-type {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .user-option {
+            flex: 1;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .user-option:hover {
+            border-color: green;
+        }
+        .user-option.selected {
+            border-color: #007bff;
+            background-color: #e7f3ff;
+        }
+        button:hover {
+            background-color: green;
+        }
+    </style>
+<body>
+    <div class="login-container">
+        <h2>Sistema de Matrícula</h2>
+        <h3>Iniciar Sesión</h3>
+        
+        <form method="post" action="/Login/Validar">
+            <div class="user-type">
+                <div class="user-option" onclick="selectUserType('estudiante')">
+                    <h4>Estudiante</h4>
+                </div>
+                <div class="user-option" onclick="selectUserType('docente')">
+                    <h4>Docente</h4>
+                </div>
+                <div class="user-option" onclick="selectUserType('admin')">
+                    <h4>Admin</h4>
+                </div>
+            </div>
+
+            <input type="hidden" name="TipoUsuario" id="tipoUsuario" required>
+            
+            <label>Usuario:</label>
+            <input type="text" name="Username" placeholder="Ingrese su usuario" required>
+            <br>
+            <label>Contraseña:</label>
+            <input type="password" name="Password" placeholder="Ingrese su contraseña" required>
+            <br>
+            <button type="submit">Ingresar</button>
+        </form>
+
+        <div class="user-info">
+            <br>
+            <strong>Usuarios de prueba:</strong><br>
+            <strong>Admin:</strong> admin / admin123<br>
+            <strong>Docente:</strong> profesor1 / docente123<br>
+            <strong>Estudiante:</strong> estudiante1 / estudiante123
+        </div>
+    </div>
+
+    <script>
+        function selectUserType(tipo) {
+            document.getElementById('tipoUsuario').value = tipo;
+            
+            document.querySelectorAll('.user-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            
+            event.currentTarget.classList.add('selected');
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            selectUserType('estudiante');
+        });
+    </script>
+</body>
+</html>
