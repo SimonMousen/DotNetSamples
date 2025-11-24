@@ -1,0 +1,15 @@
+C:\Users\simon\DotNetSamples\TiposDeDatosApp\bin\Debug\net8.0\TiposDeDatosApp.exe
+C:\Users\simon\DotNetSamples\TiposDeDatosApp\bin\Debug\net8.0\TiposDeDatosApp.deps.json
+C:\Users\simon\DotNetSamples\TiposDeDatosApp\bin\Debug\net8.0\TiposDeDatosApp.runtimeconfig.json
+C:\Users\simon\DotNetSamples\TiposDeDatosApp\bin\Debug\net8.0\TiposDeDatosApp.dll
+C:\Users\simon\DotNetSamples\TiposDeDatosApp\bin\Debug\net8.0\TiposDeDatosApp.pdb
+C:\Users\simon\DotNetSamples\TiposDeDatosApp\obj\Debug\net8.0\TiposDeDatosApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\simon\DotNetSamples\TiposDeDatosApp\obj\Debug\net8.0\TiposDeDatosApp.AssemblyInfoInputs.cache
+C:\Users\simon\DotNetSamples\TiposDeDatosApp\obj\Debug\net8.0\TiposDeDatosApp.AssemblyInfo.cs
+C:\Users\simon\DotNetSamples\TiposDeDatosApp\obj\Debug\net8.0\TiposDeDatosApp.csproj.CoreCompileInputs.cache
+C:\Users\simon\DotNetSamples\TiposDeDatosApp\obj\Debug\net8.0\TiposDeDatosApp.sourcelink.json
+C:\Users\simon\DotNetSamples\TiposDeDatosApp\obj\Debug\net8.0\TiposDeDatosApp.dll
+C:\Users\simon\DotNetSamples\TiposDeDatosApp\obj\Debug\net8.0\refint\TiposDeDatosApp.dll
+C:\Users\simon\DotNetSamples\TiposDeDatosApp\obj\Debug\net8.0\TiposDeDatosApp.pdb
+C:\Users\simon\DotNetSamples\TiposDeDatosApp\obj\Debug\net8.0\TiposDeDatosApp.genruntimeconfig.cache
+C:\Users\simon\DotNetSamples\TiposDeDatosApp\obj\Debug\net8.0\ref\TiposDeDatosApp.dll

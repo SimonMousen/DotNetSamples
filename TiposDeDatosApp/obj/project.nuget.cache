@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "c65DZ2pgocqIRFh2NUCujbgIFqS72eUS5Y4HqZzxfhywiiDd0Qw7Jrj8n6ScHS1JijlVpLvfEMKWdnA/Z9GPgw==",
+  "dgSpecHash": "bgY0pa9t3oU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\USUARIO\\Documents\\DotNetSamples\\TiposDeDatosApp\\TiposDeDatosApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\simon\\DotNetSamples\\TiposDeDatosApp\\TiposDeDatosApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.13\\microsoft.netcore.app.ref.8.0.13.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.13\\microsoft.windowsdesktop.app.ref.8.0.13.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.13\\microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.13\\microsoft.netcore.app.host.win-x64.8.0.13.nupkg.sha512"
+  ],
   "logs": []
 }

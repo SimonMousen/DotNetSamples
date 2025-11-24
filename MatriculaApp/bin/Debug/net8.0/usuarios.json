@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Username": "admin",
+    "Password": "admin123",
+    "Tipo": "admin",
+    "Nombre": "Administrador",
+    "Email": "admin@escuela.com"
+  },
+  {
+    "Id": 2,
+    "Username": "profesor1",
+    "Password": "docente123",
+    "Tipo": "docente",
+    "Nombre": "Juan P\u00E9rez",
+    "Email": "juan@escuela.com"
+  },
+  {
+    "Id": 3,
+    "Username": "estudiante1",
+    "Password": "estudiante123",
+    "Tipo": "estudiante",
+    "Nombre": "Mar\u00EDa Garc\u00EDa",
+    "Email": "maria@escuela.com"
+  }
+]

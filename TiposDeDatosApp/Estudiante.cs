@@ -9,7 +9,7 @@ namespace TiposDeDatosApp
         //la clase base tiene todos los campos que requiere.
         //Creo un Constructor para la clase que permit ainicializar las propiedades.       
 
-       public Estudiante(int idest, string nom, string apel, string dir, string ema, int tel, DateTime fen, DateTime fin)
+        public Estudiante(int idest, string nom, string apel, string dir, string ema, int tel, DateTime fen, DateTime fin)
         {
             this.Id = idest;
             this.Nombres = nom;
