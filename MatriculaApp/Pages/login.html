@@ -7,6 +7,7 @@
     
 </head>
 <style>
+        /* Estilos para los botones de tipo de usuario */
         .user-type {
             display: flex;
             justify-content: space-between;
@@ -20,14 +21,14 @@
             transition: all 0.3s;
         }
         .user-option:hover {
-            border-color: green;
+            border-color: green; /* Cambia color al pasar el mouse */
         }
         .user-option.selected {
-            border-color: #007bff;
-            background-color: #e7f3ff;
+            border-color: #007bff; /* Azul cuando está seleccionado */
+            background-color: #e7f3ff; /* Fondo azul claro */
         }
         button:hover {
-            background-color: green;
+            background-color: green; /* Botón verde al pasar mouse */
         }
     </style>
 <body>
@@ -35,7 +36,9 @@
         <h2>Sistema de Matrícula</h2>
         <h3>Iniciar Sesión</h3>
         
+        <!-- Formulario para iniciar sesión -->
         <form method="post" action="/Login/Validar">
+            <!-- 3 opciones para seleccionar tipo de usuario -->
             <div class="user-type">
                 <div class="user-option" onclick="selectUserType('estudiante')">
                     <h4>Estudiante</h4>
@@ -48,17 +51,22 @@
                 </div>
             </div>
 
+            <!-- Campo oculto que guarda el tipo seleccionado -->
             <input type="hidden" name="TipoUsuario" id="tipoUsuario" required>
             
+            <!-- Campo para nombre de usuario -->
             <label>Usuario:</label>
             <input type="text" name="Username" placeholder="Ingrese su usuario" required>
             <br>
+            <!-- Campo para contraseña -->
             <label>Contraseña:</label>
             <input type="password" name="Password" placeholder="Ingrese su contraseña" required>
             <br>
+            <!-- Botón para enviar el formulario -->
             <button type="submit">Ingresar</button>
         </form>
 
+        <!-- Información de usuarios de prueba -->
         <div class="user-info">
             <br>
             <strong>Usuarios de prueba:</strong><br>
@@ -69,16 +77,21 @@
     </div>
 
     <script>
+        // Función para seleccionar un tipo de usuario
         function selectUserType(tipo) {
+            // Guarda el tipo en el campo oculto
             document.getElementById('tipoUsuario').value = tipo;
             
+            // Quita la selección de todos los botones
             document.querySelectorAll('.user-option').forEach(opt => {
                 opt.classList.remove('selected');
             });
             
+            // Agrega la selección al botón clickeado
             event.currentTarget.classList.add('selected');
         }
 
+        // Cuando la página carga, selecciona "estudiante" por defecto
         document.addEventListener('DOMContentLoaded', function() {
             selectUserType('estudiante');
         });

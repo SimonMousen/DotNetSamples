@@ -6,23 +6,33 @@
     <title>Formulario de Matrícula</title>
 </head>
 <body>
+    <!-- Título de la página -->
     <h2>Formulario de Matrícula</h2>
+    
+    <!-- Formulario para llenar datos de matrícula -->
     <form method="post" action="/Matricula/Guardar">
+        
+        <!-- Campo para el nombre -->
         <label>Nombre:</label><br>
         <input type="text" name="Nombre" required><br><br>
 
+        <!-- Campo para el documento de identidad -->
         <label>Documento:</label><br>
         <input type="text" name="Documento" required><br><br>
 
+        <!-- Campo para el curso deseado -->
         <label>Curso:</label><br>
         <input type="text" name="Curso" required><br><br>
 
+        <!-- Campo para la edad (solo números) -->
         <label>Edad:</label><br>
         <input type="number" name="Edad" required><br><br>
 
+        <!-- Campo para el correo electrónico -->
         <label>Email:</label><br>
         <input type="email" name="Email" required><br><br>
 
+        <!-- Botón para enviar el formulario -->
         <button type="submit">Guardar Matrícula</button>
     </form>
 </body>
