@@ -1,42 +1,64 @@
 <!DOCTYPE html>
+<!-- DECLARACIÓN DEL TIPO DE DOCUMENTO Y IDIOMA -->
 <html lang="es">
 <head>
+    <!-- CONFIGURACIÓN DEL ENCODING PARA CARACTERES ESPECIALES -->
     <meta charset="UTF-8">
+    <!-- CONFIGURACIÓN PARA DISPOSITIVOS MÓVILES -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TÍTULO DE LA PÁGINA QUE APARECE EN LA PESTAÑA DEL NAVEGADOR -->
     <title>Sistema de Matrícula</title>
+    
+    <!-- ESTILOS CSS INTERNOS PARA LA PÁGINA -->
     <style>
+        /* ESTILOS GENERALES DEL CUERPO DE LA PÁGINA */
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f9f9f9;
-            text-align: center;
+            font-family: Arial, sans-serif; /* TIPOGRAFÍA PRINCIPAL */
+            margin: 20px; /* MARGEN EXTERNO */
+            background-color: #f9f9f9; /* COLOR DE FONDO CLARO */
+            text-align: center; /* CENTRADO DE TODO EL TEXTO */
         }
+        
+        /* CONTENEDOR PARA LOS BOTONES */
         .button-container {
-            margin: 20px 0;
+            margin: 20px 0; /* MARGEN SUPERIOR E INFERIOR */
         }
+        
+        /* ESTILO BASE PARA TODOS LOS BOTONES */
         .btn {
-            display: block;
-            width: 200px;
-            margin: 10px auto;
-            padding: 10px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border: none;
-            border-radius: 4px;
+            display: block; /* HACE QUE EL BOTÓN OCUPE TODA LA LÍNEA */
+            width: 200px; /* ANCHO FIJO DE LOS BOTONES */
+            margin: 10px auto; /* MARGEN VERTICAL Y CENTRADO HORIZONTAL */
+            padding: 10px; /* ESPACIADO INTERNO */
+            background: #007bff; /* COLOR AZUL DE FONDO */
+            color: white; /* COLOR DE TEXTO BLANCO */
+            text-decoration: none; /* ELIMINA EL SUBRAYADO DEL ENLACE */
+            border: none; /* SIN BORDE */
+            border-radius: 4px; /* ESQUINAS REDONDEADAS */
         }
+        
+        /* ESTILO ESPECIAL PARA EL BOTÓN DE MATRÍCULA */
         .btn-matricula {
-            background: #28a745;
+            background: #28a745; /* COLOR VERDE DIFERENTE AL AZUL */
         }
     </style>
 </head>
 <body>
+    <!-- CONTENEDOR PRINCIPAL DE LA PÁGINA -->
     <div class="container">
+        <!-- TÍTULO PRINCIPAL DE LA PÁGINA -->
         <h1>Sistema de Matrícula</h1>
+        
+        <!-- MENSAJE DE BIENVENIDA -->
         <p>Bienvenido al sistema de gestión académica</p>
         
+        <!-- CONTENEDOR CON LOS DOS BOTONES PRINCIPALES -->
         <div class="button-container">
+            <!-- BOTÓN PARA IR A LA PÁGINA DE LOGIN (INICIAR SESIÓN) -->
             <a href="/Login" class="btn">Iniciar Sesión</a>
+            
+            <!-- BOTÓN PARA IR DIRECTAMENTE AL FORMULARIO DE MATRÍCULA -->
+            <!-- TIENE UNA CLASE ADICIONAL (btn-matricula) PARA COLOR VERDE -->
             <a href="/Matricula" class="btn btn-matricula">Matricularse</a>
         </div>
     </div>
