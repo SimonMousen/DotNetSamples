@@ -4,128 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <!-- ESTILOS CSS PARA EL FORMULARIO DE LOGIN -->
     <style>
-        /* Estilos generales de la página */
+        /* ESTILOS GENERALES DE LA PÁGINA */
         body {
-            font-family: Arial, sans-serif; /* Usa la fuente Arial */
-            margin: 20px; /* Margen alrededor del contenido */
-            background-color: #f0f0f0; /* Color de fondo gris claro */
+            font-family: Arial, sans-serif; /* FUENTE PRINCIPAL */
+            margin: 20px; /* MARGEN EXTERNO */
+            background-color: #f0f0f0; /* COLOR DE FONDO */
         }
         
-        /* Contenedor principal del login */
+        /* CONTENEDOR PRINCIPAL DEL LOGIN */
         .login-container {
-            background: white; /* Fondo blanco para el formulario */
-            padding: 20px; /* Espacio interior */
-            border: 1px solid #ccc; /* Borde gris */
-            max-width: 400px; /* Ancho máximo */
-            margin: 0 auto; /* Centrado horizontal */
+            background: white; /* FONDO BLANCO */
+            padding: 20px; /* ESPACIADO INTERNO */
+            border: 1px solid #ccc; /* BORDE GRIS */
+            max-width: 400px; /* ANCHO MÁXIMO */
+            margin: 0 auto; /* CENTRADO HORIZONTAL */
         }
         
-        /* Estilo del título principal */
+        /* ESTILO DEL TÍTULO PRINCIPAL */
         h2 {
-            color: #333; /* Color gris oscuro */
-            text-align: center; /* Texto centrado */
+            color: #333; /* COLOR DE TEXTO */
+            text-align: center; /* CENTRADO */
         }
         
-        /* Estilo de las etiquetas del formulario */
+        /* ESTILO DE LAS ETIQUETAS */
         label {
-            display: block; /* Hace que cada label ocupe toda la línea */
-            margin-top: 10px; /* Espacio superior entre labels */
+            display: block; /* OCUPA TODA LA LÍNEA */
+            margin-top: 10px; /* ESPACIO SUPERIOR */
         }
         
-        /* Estilo de los campos de entrada y selección */
+        /* ESTILO DE CAMPOS DE ENTRADA */
         input, select {
-            width: 100%; /* Ocupa todo el ancho disponible */
-            padding: 8px; /* Espacio interior */
-            margin: 5px 0; /* Margen arriba y abajo */
-            border: 1px solid #ccc; /* Borde gris */
+            width: 100%; /* ANCHO COMPLETO */
+            padding: 8px; /* ESPACIADO INTERNO */
+            margin: 5px 0; /* MARGEN VERTICAL */
+            border: 1px solid #ccc; /* BORDE */
         }
         
-        /* Estilo del botón de enviar */
+        /* ESTILO DEL BOTÓN */
         button {
-            width: 100%; /* Ocupa todo el ancho */
-            padding: 10px; /* Espacio interior */
-            background: #007bff; /* Color azul */
-            color: white; /* Texto blanco */
-            border: none; /* Sin borde */
-            margin-top: 15px; /* Espacio superior */
+            width: 100%; /* ANCHO COMPLETO */
+            padding: 10px; /* ESPACIADO INTERNO */
+            background: #007bff; /* COLOR AZUL */
+            color: white; /* TEXTO BLANCO */
+            border: none; /* SIN BORDE */
+            margin-top: 15px; /* ESPACIO SUPERIOR */
         }
         
-        /* Estilo de las opciones de tipo de usuario */
+        /* ESTILO DE OPCIONES DE USUARIO */
         .user-option {
-            padding: 10px; /* Espacio interior */
-            margin: 5px; /* Margen alrededor */
-            border: 1px solid #ccc; /* Borde gris */
-            text-align: center; /* Texto centrado */
-            cursor: pointer; /* Cursor de mano al pasar mouse */
+            padding: 10px; /* ESPACIADO INTERNO */
+            margin: 5px; /* MARGEN */
+            border: 1px solid #ccc; /* BORDE GRIS */
+            text-align: center; /* TEXTO CENTRADO */
+            cursor: pointer; /* CURSOR DE MANO */
         }
         
-        /* Estilo cuando una opción está seleccionada */
+        /* ESTILO CUANDO UNA OPCIÓN ESTÁ SELECCIONADA */
         .user-option.selected {
-            background: #e0e0e0; /* Fondo gris claro */
+            background: #e0e0e0; /* FONDO GRIS CLARO */
         }
     </style>
 </head>
 <body>
-    <!-- Contenedor principal del formulario de login -->
+    <!-- CONTENEDOR PRINCIPAL DEL FORMULARIO -->
     <div class="login-container">
-        <h2>Iniciar Sesión</h2> <!-- Título principal -->
+        <!-- TÍTULO PRINCIPAL -->
+        <h2>Iniciar Sesión</h2>
         
-        <!-- Formulario que envía datos al servidor -->
+        <!-- FORMULARIO QUE ENVÍA DATOS AL SERVIDOR -->
         <form method="post" action="/Login/Validar">
-            <!-- Contenedor para las opciones de tipo de usuario -->
+            <!-- CONTENEDOR PARA OPCIONES DE TIPO DE USUARIO -->
             <div>
-                <!-- Opción para estudiante -->
+                <!-- OPCIÓN PARA ESTUDIANTE -->
                 <div class="user-option" onclick="selectUserType('estudiante')">Estudiante</div>
-                <!-- Opción para docente -->
+                <!-- OPCIÓN PARA DOCENTE -->
                 <div class="user-option" onclick="selectUserType('docente')">Docente</div>
-                <!-- Opción para administrador -->
+                <!-- OPCIÓN PARA ADMINISTRADOR -->
                 <div class="user-option" onclick="selectUserType('admin')">Admin</div>
             </div>
 
-            <!-- Campo oculto que guarda el tipo de usuario seleccionado -->
+            <!-- CAMPO OCULTO QUE GUARDA EL TIPO SELECCIONADO -->
             <input type="hidden" name="TipoUsuario" id="tipoUsuario" required>
             
-            <!-- Campo para ingresar el nombre de usuario -->
+            <!-- CAMPO PARA NOMBRE DE USUARIO -->
             <label>Usuario:</label>
             <input type="text" name="Username" required>
             
-            <!-- Campo para ingresar la contraseña -->
+            <!-- CAMPO PARA CONTRASEÑA -->
             <label>Contraseña:</label>
             <input type="password" name="Password" required>
             
-            <!-- Botón para enviar el formulario -->
+            <!-- BOTÓN PARA ENVIAR FORMULARIO -->
             <button type="submit">Ingresar</button>
         </form>
 
-        <!-- Sección con información de usuarios de prueba -->
+        <!-- SECCIÓN CON INFORMACIÓN DE USUARIOS DE PRUEBA -->
         <div style="margin-top: 20px; padding: 10px; background: #f8f9fa;">
             <strong>Usuarios de prueba:</strong><br>
-            Admin: admin / admin123<br> <!-- Usuario administrador -->
-            Docente: profesor1 / docente123<br> <!-- Usuario docente -->
-            Estudiante: estudiante1 / estudiante123 <!-- Usuario estudiante -->
+            <!-- USUARIO ADMINISTRADOR DE PRUEBA -->
+            Admin: admin / admin123<br>
+            <!-- USUARIO DOCENTE DE PRUEBA -->
+            Docente: profesor1 / docente123<br>
+            <!-- USUARIO ESTUDIANTE DE PRUEBA -->
+            Estudiante: estudiante1 / estudiante123
         </div>
     </div>
 
+    <!-- SCRIPT JAVASCRIPT PARA MANEJO DE INTERACTIVIDAD -->
     <script>
-        // Función para seleccionar el tipo de usuario
+        // FUNCIÓN PARA SELECCIONAR TIPO DE USUARIO
         function selectUserType(tipo) {
-            // Asigna el tipo seleccionado al campo oculto
+            // ASIGNA EL TIPO AL CAMPO OCULTO
             document.getElementById('tipoUsuario').value = tipo;
             
-            // Obtiene todas las opciones de usuario
+            // OBTIENE TODAS LAS OPCIONES DE USUARIO
             var options = document.querySelectorAll('.user-option');
             
-            // Remueve la clase 'selected' de todas las opciones
+            // REMUEVE LA CLASE 'selected' DE TODAS LAS OPCIONES
             options.forEach(function(opt) {
                 opt.classList.remove('selected');
             });
             
-            // Agrega la clase 'selected' a la opción clickeada
+            // AGREGA LA CLASE 'selected' A LA OPCIÓN CLICKEADA
             event.currentTarget.classList.add('selected');
         }
         
-        // Selecciona 'estudiante' por defecto al cargar la página
+        // SELECCIONA 'ESTUDIANTE' POR DEFECTO AL CARGAR LA PÁGINA
         selectUserType('estudiante');
     </script>
 </body>

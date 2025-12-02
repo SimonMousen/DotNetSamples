@@ -4,35 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Matrícula</title>
+    <!-- FORMULARIO PARA REALIZAR MATRÍCULAS -->
 </head>
 <body>
-    <!-- Título de la página -->
+    <!-- TÍTULO DEL FORMULARIO -->
     <h2>Formulario de Matrícula</h2>
     
-    <!-- Formulario para llenar datos de matrícula -->
+    <!-- FORMULARIO PARA ENVIAR DATOS DE MATRÍCULA -->
     <form method="post" action="/Matricula/Guardar">
         
-        <!-- Campo para el nombre -->
+        <!-- CAMPO PARA EL NOMBRE COMPLETO -->
         <label>Nombre:</label><br>
         <input type="text" name="Nombre" required><br><br>
 
-        <!-- Campo para el documento de identidad -->
+        <!-- CAMPO PARA EL DOCUMENTO DE IDENTIDAD -->
         <label>Documento:</label><br>
         <input type="text" name="Documento" required><br><br>
 
-        <!-- Campo para el curso deseado -->
+        <!-- CAMPO PARA EL CURSO DESEADO -->
         <label>Curso:</label><br>
         <input type="text" name="Curso" required><br><br>
 
-        <!-- Campo para la edad (solo números) -->
+        <!-- CAMPO PARA LA EDAD (SOLO NÚMEROS) -->
         <label>Edad:</label><br>
         <input type="number" name="Edad" required><br><br>
 
-        <!-- Campo para el correo electrónico -->
+        <!-- CAMPO PARA EL CORREO ELECTRÓNICO -->
         <label>Email:</label><br>
         <input type="email" name="Email" required><br><br>
 
-        <!-- Botón para enviar el formulario -->
+        <!-- BOTÓN PARA ENVIAR EL FORMULARIO -->
         <button type="submit">Guardar Matrícula</button>
     </form>
 </body>

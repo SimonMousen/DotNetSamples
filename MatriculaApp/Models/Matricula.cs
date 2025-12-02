@@ -1,21 +1,21 @@
 namespace MatriculaApp.Models
 {
-    // Esta clase guarda los datos de una matrícula escolar
+    // MODELO QUE REPRESENTA UNA MATRÍCULA ESCOLAR
     public class Matricula
     {
-        // El nombre completo del estudiante
+        // NOMBRE COMPLETO DEL ESTUDIANTE
         public string Nombre { get; set; }
         
-        // El número de documento de identidad
+        // NÚMERO DE DOCUMENTO DE IDENTIDAD
         public string Documento { get; set; }
         
-        // El curso al que se quiere matricular
+        // CURSO AL QUE SE MATRICULA EL ESTUDIANTE
         public string Curso { get; set; }
         
-        // La edad del estudiante
+        // EDAD DEL ESTUDIANTE
         public int Edad { get; set; }
         
-        // El correo electrónico para contactar
+        // CORREO ELECTRÓNICO DEL ESTUDIANTE
         public string Email { get; set; }
     }
 }

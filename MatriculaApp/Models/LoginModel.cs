@@ -1,15 +1,15 @@
 namespace MatriculaApp.Models
 {
-    // Esta clase representa los datos que vienen del formulario de login
+    // MODELO QUE REPRESENTA LOS DATOS DEL FORMULARIO DE LOGIN
     public class LoginModel
     {
-        // El nombre de usuario que escribe la persona
+        // NOMBRE DE USUARIO PARA INICIAR SESIÓN
         public string Username { get; set; }
         
-        // La contraseña que escribe la persona  
+        // CONTRASEÑA DEL USUARIO
         public string Password { get; set; }
         
-        // El tipo de usuario que selecciona (admin, docente o estudiante)
+        // TIPO DE USUARIO: admin, docente o estudiante
         public string TipoUsuario { get; set; }
     }
 }

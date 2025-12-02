@@ -1,24 +1,24 @@
 namespace MatriculaApp.Models
 {
-    // Esta clase representa a una persona que puede usar el sistema
+    // MODELO QUE REPRESENTA UN USUARIO DEL SISTEMA
     public class Usuario
     {
-        // Un número único para identificar a cada usuario (como número de carnet)
+        // IDENTIFICADOR ÚNICO DEL USUARIO
         public int Id { get; set; }
         
-        // El nombre de usuario para iniciar sesión (como un apodo)
+        // NOMBRE DE USUARIO PARA LOGIN
         public string Username { get; set; }
         
-        // La contraseña para verificar que es la persona correcta
+        // CONTRASEÑA DEL USUARIO
         public string Password { get; set; }
         
-        // El tipo de usuario: admin, docente o estudiante
+        // TIPO DE USUARIO: admin, docente o estudiante
         public string Tipo { get; set; } 
         
-        // El nombre completo real de la persona
+        // NOMBRE COMPLETO REAL DEL USUARIO
         public string Nombre { get; set; }
         
-        // El correo electrónico de contacto
+        // CORREO ELECTRÓNICO DEL USUARIO
         public string Email { get; set; }
     }
 }
